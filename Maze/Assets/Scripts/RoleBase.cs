@@ -48,8 +48,8 @@ public class RoleBase : MonoBehaviour
                         && (nav.destination.y - nav.nextPosition.y <= 0.05f)
                         && (nav.destination.z - nav.nextPosition.z <= 0.05f) && lineRd.enabled)
         {
-            nav.velocity = Vector3.zero;
-            rb.velocity = Vector3.zero;
+           // nav.velocity = Vector3.zero;
+            //rb.velocity = Vector3.zero;
         }
     }
 
