@@ -8,7 +8,7 @@ public class RoleBase : MonoBehaviour
     private MeshRenderer mr;
     private NavMeshAgent nav;
     private LineRenderer lineRd;
-
+    private Rigidbody rb;
     [SerializeField]
     float moveSpeed;
 
@@ -25,6 +25,7 @@ public class RoleBase : MonoBehaviour
         mr = this.transform.GetComponent<MeshRenderer>();
         nav = this.transform.GetComponent<NavMeshAgent>();
         lineRd = this.transform.GetComponent<LineRenderer>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Start()
@@ -41,6 +42,14 @@ public class RoleBase : MonoBehaviour
             lineRd.enabled = true;
             lineRd.positionCount = nav.path.corners.Length;
             lineRd.SetPositions(nav.path.corners);
+        }
+
+        if ((nav.destination.x - nav.nextPosition.x <= 0.05f)
+                        && (nav.destination.y - nav.nextPosition.y <= 0.05f)
+                        && (nav.destination.z - nav.nextPosition.z <= 0.05f) && lineRd.enabled)
+        {
+            nav.velocity = Vector3.zero;
+            rb.velocity = Vector3.zero;
         }
     }
 

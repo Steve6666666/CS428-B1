@@ -33,39 +33,37 @@ public class MouseManager : MonoBehaviour
 
     void RayCheck()
     {
-        if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))//ÓÒ×ß
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit hitInfo;
             Physics.Raycast(ray, out hitInfo);
 
-            if(hitInfo.collider)
+            if (hitInfo.collider)
             {
-                //if(hitInfo.collider.CompareTag("Role"))
-                //{
-                //    //TODO
-                //    hitInfo.collider.GetComponent<RoleBase>().Selected();
-                //}
-                if(hitInfo.collider.CompareTag("Ground"))
+
+                if (hitInfo.collider.CompareTag("Ground"))
                 {
                     //TODO
                     RoleManager.Instance.Notify(hitInfo.point);
                 }
             }
         }
-        if (Input.GetMouseButton(0))
+        else if (Input.GetMouseButtonDown(1))//×óÑ¡
         {
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             RaycastHit hitInfo;
             Physics.Raycast(ray, out hitInfo);
-            if (hitInfo.collider)
+            if (hitInfo.collider.CompareTag("Role"))
             {
-                if (hitInfo.collider.CompareTag("Role"))
-                {
-                    //TODO
-                    hitInfo.collider.GetComponent<RoleBase>().Selected();
-                }
+
+                hitInfo.collider.GetComponent<RoleBase>().Selected();
+            }else if (hitInfo.collider.CompareTag("MovingObstacle"))
+            {
+                hitInfo.collider.GetComponent<MovingObstacleController>().Selected();
             }
         }
     }
