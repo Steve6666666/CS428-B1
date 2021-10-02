@@ -35,16 +35,20 @@ public class RoleBase : MonoBehaviour
     {
         isSelected = false;
         isCollide = false;
-        //if(gameObject.layer== LayerMask.NameToLayer("adverse"))
-        //{
-        //    adversePos = rb.position;
-        //    gameObject
-        //}
+        if (gameObject.layer == LayerMask.NameToLayer("adverse"))
+        {
+            adversePos = rb.position;
+        }
     }
 
     void Update()
     {
+ 
         lineRd.enabled = nav.velocity.sqrMagnitude > 0.0f ? true : false;
+        if (gameObject.layer == LayerMask.NameToLayer("adverse"))
+        {
+            adversePos = rb.position;
+        }
 
         if (nav.path.corners.Length > 1 && lineRd.enabled)
         {
@@ -60,28 +64,33 @@ public class RoleBase : MonoBehaviour
             //nav.velocity = Vector3.zero;
             //rb.velocity = Vector3.zero;
         }
-        else if(nav.isStopped || (nav.destination.x - nav.nextPosition.x > 0.5f)
-                        && (nav.destination.y - nav.nextPosition.y > 0.5f)
-                        && (nav.destination.z - nav.nextPosition.z > 0.5f))
+        else if(nav.isStopped || (Math.Abs(nav.destination.x )> 0.1f
+                        && Math.Abs(nav.destination.y) > 0.1f
+                        && Math.Abs(nav.destination.z) > 0.1f))
         {
             nav.isStopped = false;
-            lineRd.enabled = true;
+            //lineRd.enabled = true;
             isCollide = false;
+          
         }
-        if (isCollide)
+       
+        if ((isStopped&&isCollide)|| (Math.Abs(nav.destination.x - nav.nextPosition.x) <= 0.5f
+                        && Math.Abs(nav.destination.y - nav.nextPosition.y) <= 0.5f
+                        && Math.Abs(nav.destination.z - nav.nextPosition.z) <= 0.5f))
         {
-            nav.isStopped = true;
-            nav.velocity = Vector3.zero;
-            lineRd.enabled = false;
-            nav.path = null;
+
+            //nav.isStopped=true;
+            nav.ResetPath();
+        
         }
         
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("obstacle")|| collision.collider.gameObject.layer == LayerMask.NameToLayer("adverse"))
+        if (collision.collider.gameObject.CompareTag("Adversial")|| collision.collider.gameObject.layer == LayerMask.NameToLayer("adverse"))
         {
             isCollide = true;
+            
         }
 
     }
