@@ -65,9 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\MouseManager.cs" />
     <Compile Include="Assets\Scripts\MovingObstacleController.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\ObstacleBase.cs" />
+    <Compile Include="Assets\Scripts\pathfinding.cs" />
     <Compile Include="Assets\Scripts\RoleBase.cs" />
     <Compile Include="Assets\Scripts\RoleManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
