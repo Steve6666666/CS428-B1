@@ -27,7 +27,14 @@ public class CameraController : MonoBehaviour
         {
             pos.x += panSpead * Time.deltaTime;
         }
-
+        if (Input.GetKey("space"))
+        {
+            pos.y += panSpead * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.RightShift))
+        {
+            pos.y -= panSpead * Time.deltaTime;
+        }
         transform.position = pos;
     }
 }

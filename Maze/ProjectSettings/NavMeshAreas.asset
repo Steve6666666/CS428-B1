@@ -14,7 +14,7 @@ NavMeshProjectSettings:
   - name: Mud
     cost: 5
   - name: Water
-    cost: 6
+    cost: 0.0001
   - name: 
     cost: 1
   - name: 
