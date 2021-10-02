@@ -34,8 +34,8 @@ public class MovingObstacleController : MonoBehaviour
     {
         if (isSelected)
         {
-            float moveHorizontal = Input.GetAxis("Horizontal");
-            float moveVertical = Input.GetAxis("Vertical");
+            float moveHorizontal = Input.GetAxis("Horizontal2");
+            float moveVertical = Input.GetAxis("Vertical2");
 
             Vector3 movement = new Vector3(moveHorizontal, 0.0F, moveVertical);
 
