@@ -8182,7 +8182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0666515494bf3846bb352995bc1e3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
   originalMat: {fileID: 2100000, guid: 8d424d6ae5916d4478bdc60296ecb41c, type: 2}
   selectedMat: {fileID: 2100000, guid: 92983bebf0c123743884e65c32e2902a, type: 2}
   isSelected: 0
