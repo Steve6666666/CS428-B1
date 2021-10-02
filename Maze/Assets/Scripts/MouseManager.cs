@@ -33,7 +33,7 @@ public class MouseManager : MonoBehaviour
 
     void RayCheck()
     {
-        if (Input.GetMouseButtonDown(0))//ÓÒ×ß
+        if (Input.GetMouseButtonDown(1))//????
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -50,7 +50,7 @@ public class MouseManager : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetMouseButtonDown(1))//×óÑ¡
+        else if (Input.GetMouseButtonDown(0))//????
         {
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
