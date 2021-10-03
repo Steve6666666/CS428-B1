@@ -112,6 +112,7 @@ MonoBehaviour:
   originalMat: {fileID: 2100000, guid: 960eb24b14f5ca642bb3cebab18d03e3, type: 2}
   selectedMat: {fileID: 2100000, guid: 3efcb002f9875094282cb5d436ce5ec0, type: 2}
   isStopped: 0
+  isCollide: 0
 --- !u!195 &2817065523629995214
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -126,10 +127,10 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
-  m_AutoRepath: 1
+  m_AutoRepath: 0
   m_Height: 2
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
