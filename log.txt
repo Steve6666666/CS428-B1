@@ -1,0 +1,38 @@
+d7185eb4 was UiUian,6 minutes ago,message:motion
+6ade83e3 was UiUian,3 hours ago,message:modify collied motion
+f7abd20d was UiUian,5 hours ago,message:Merge branch 'main' of https://github.com/Steve6666666/CS428-B1 into main
+3a747c9f was UiUian,5 hours ago,message:add adverse ball
+8cec766c was Steve6666666,6 hours ago,message:off mesh link2
+afdb79a4 was Steve6666666,6 hours ago,message:Merge branch 'main' of https://github.com/Steve6666666/CS428-B1 into main
+15ba2247 was Steve6666666,6 hours ago,message:off mesh link
+15570098 was yl330,7 hours ago,message:Fixed camera and start A* for agent
+affeb54c was Steve6666666,7 hours ago,message:change role base
+cbb9425b was yl330,27 hours ago,message:Camera fixed
+d37ccd21 was yl330,30 hours ago,message:camera fixed(rotation, zoom in/out)
+902e92b5 was Steve6666666,34 hours ago,message:bonus 1
+efa1214f was UiUian,3 days ago,message:new base
+ea4f1837 was UiUian,3 days ago,message:edit base
+595fc538 was Steve6666666,5 days ago,message:base2
+9215d156 was UiUian,5 days ago,message:base
+810b949b was vivianz,5 days ago,message:edit
+0186880b was vivianz,5 days ago,message:base
+6148d19a was Steve6666666,5 days ago,message:Delete code/B1/Library directory
+6673d07d was Stevesong666,5 days ago,message:merge branch 'main' of https://github.com/Steve6666666/CS428-B1
+ae910fd9 was Stevesong666,5 days ago,message:new start
+f456af92 was Steve6666666,5 days ago,message:Delete .gitignore.txt
+2e28058c was Stevesong666,5 days ago,message:new start
+098dddab was Steve6666666,5 days ago,message:Delete code directory
+b67d4741 was Steve6666666,5 days ago,message:Delete .vs directory
+b16753a8 was Steve6666666,5 days ago,message:Delete .DS_Store
+e0047701 was Steve6666666,5 days ago,message:Delete code/B1/Assets/Materials directory
+bd04fd66 was Steve6666666,5 days ago,message:Delete Maze.unity
+cf0d06df was Steve6666666,5 days ago,message:Delete Maze.unity.meta
+5502141d was vivianz,5 days ago,message:Merge branch 'main' of https://github.com/Steve6666666/CS428-B1 into main
+6d97d249 was vivianz,5 days ago,message:update
+10649b19 was Stevesong666,5 days ago,message:two floor
+37d2121d was Stevesong666,5 days ago,message: two floor
+b4144670 was Stevesong666,5 days ago,message:make color
+e4f791c6 was Stevesong666,11 days ago,message:test 1
+3525de8e was yl330,11 days ago,message:start up
+73ce9c41 was yl330,12 days ago,message:test
+75a7c09c was Steve6666666,12 days ago,message:Initial commit
